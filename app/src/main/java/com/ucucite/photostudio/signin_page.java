@@ -8,6 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import android.widget.Button;
 import android.widget.TextView;
 import android.content.Intent;
 
@@ -30,6 +31,14 @@ public class signin_page extends AppCompatActivity {
             Intent intent = new Intent(signin_page.this, forget_pass.class);
             startActivity(intent);
         });
+
+        Button button = findViewById(R.id.btn_signin);
+        button.setOnClickListener(view -> {
+            // Start the SecondActivity
+            Intent intent = new Intent(signin_page.this, home_page.class);
+            startActivity(intent);
+        });
+
 
     }
 }
