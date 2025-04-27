@@ -8,6 +8,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+
+
 import com.ucucite.photostudio.databinding.ActivityHomePageBinding;
 
 public class home_page extends AppCompatActivity {
@@ -30,11 +32,12 @@ public class home_page extends AppCompatActivity {
             } else if (itemId == R.id.book) {
                 replaceFragment(new BookFragment());// Handle book button click
             } else if (itemId == R.id.profile) {
-               replaceFragment(new ProfileFragment()); // Handle profile button click
+               replaceFragment(new ServiceFragment()); // Handle profile button click
             }
 
             return true;
         });
+
 
     }
 
